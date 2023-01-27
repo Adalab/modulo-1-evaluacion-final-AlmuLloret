@@ -1,4 +1,73 @@
 .section2{
-    background-color:red; 
+    background-color: $color--light;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 34px 68px 60px 68px;
+
+    &__title{
+        font-size: 2rem;
+        font-family: $font-h;
+        line-height: 30px;
+
+    }
+
+    &__article{
+        margin-top: 45px;
+
+        &__title{
+            font-size: 1.8rem;
+            font-family: $font-h;
+            line-height: 30px;
+        }
+
+        &__text{
+            font-size: 1.8rem;
+            font-family: $font-text;
+            line-height: 30px;
+        }
+
+    }
+    &__button{
+
+        margin-top: 20px;
+
+        font-family: $font-text;
+        background-color: $color--brand;
+        color: $color--white;
+        font-size: 2rem;
+        padding: 8px 20px;
+        font-weight: 500;
+        border-radius: 22.5px;
+        text-decoration: none;
     
+        
+    }  
+
+
 }
+
+@media all and (min-width: 768px) {
+
+    .section2{
+    background-color: pink;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;  
+
+    &__title{
+        grid-column: span 3;
+    }
+
+    &__button{
+         grid-column: span 3;
+    }
+}
+}
+@media all and (min-width: 1200px){
+    .section2{
+        background-color: purple;
+    }
+}
+    
+ 

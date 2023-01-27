@@ -1,9 +1,42 @@
  .section1{
-        display: flex;
-        background-color: pink;
-         justify-content: center;
-        align-items: center;
-         margin: 34px 15px 50px 15px;
+
+    justify-content: center;
+    align-items: center;
+    margin: 34px 16px 60px 16px;
+
+    &__small{
+        color: $color--brand;
+        font-size: 1.4rem;
+    }
+
+    &__h{
+        font-family: $font-h;
+        line-height: 1.5;
+    }
+
+    &__t{
+        font-family: $font-text;
+        color: $color--dark;
+        font-size: 1.8rem;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    &__button{
+
+        font-family: $font-text;
+        color: $color--brand;
+        font-size: 2rem;
+        border:solid 2.5px $color--brand;
+        padding: 8px 40px;
+        font-weight: 500;
+        border-radius: 22.5px;
+        text-decoration: none;
+    
+        
+    }
+
+
+
 
 
 }
