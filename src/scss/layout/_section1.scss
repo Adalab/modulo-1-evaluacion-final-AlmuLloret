@@ -31,12 +31,52 @@
         font-weight: 500;
         border-radius: 22.5px;
         text-decoration: none;
-    
+
         
     }
 
-
-
-
-
 }
+
+@media all and (min-width: $breakpoint-tablet) {
+
+    .section1{
+
+        margin: 37px 37px 60px 60px;
+    
+        &__small{
+            font-size: 1.6rem;
+        }
+    
+        &__h{
+    
+            font-size: 3.2rem;
+        }
+    
+        &__t{
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+       
+        &__button{
+            padding-top: 10px;
+         
+            
+        }
+    
+    }
+    
+}
+@media all and (min-width: $breakpoint-desktop){
+
+    .section1{
+
+        margin-left: 230px;
+        margin-right: 100px;
+    
+           
+    }
+    
+}
+   
+    
+ 
