@@ -1,4 +1,60 @@
 .footer {
-    background-color: aqua;
+    background-color: $color--dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 65px;
+   
+    &__list{
+        
+        color: $color--white;
+        list-style: none;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+
+        &__link{
+            list-style: none;
+            color: $color--white;
+            font-size:1.6rem;
+            font-family: $font-text ;
+            text-decoration: none;
+            line-height: 1.88;
+
+        }
+    }
+
+    &__logo{
+        
+        margin-bottom: 50px;
+        color: $color--white;
+        font-size:1.4rem;
+        font-family: $font-text ;
+        line-height: 30px;
+        text-align: center;
+
+        &--color{
+            color: $color--brand;
+        }
+
+    }
+
+    &__button {
+        
+        position: relative;
+        top: -87.5px;
+        background-color: $color--white;
+        background-image: url(../images/ico-arrow.svg);
+        background-repeat: no-repeat;
+        background-size: 2rem;
+        background-position: center;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        
+    }
+
     
 }
+
