@@ -1,7 +1,7 @@
 .section2{
     display:grid;
     grid-template-columns:1fr;
-    grid-template-rows:repeat (5, 125px);  
+    grid-template-rows:repeat (5, 1fr);  
     background-color: $color--light;
     justify-content: center;
     align-items: center;
@@ -17,11 +17,13 @@
 
     &__article{
         margin-top: 45px;
+        justify-content: center;
+        align-items: center;
 
         &__title{
             font-size: 1.8rem;
             font-family: $font-h;
-            line-height: 30px;
+            
         }
 
         &__text{
@@ -33,6 +35,8 @@
     }
     &__button{
 
+        display: inline;
+
         margin: 40px 10px 0 10px;
         font-family: $font-text;
         background-color: $color--brand;
@@ -40,8 +44,13 @@
         font-size: 2rem;
         padding: 8px 10px;
         font-weight: 500;
+        width: 18.4rem;
+        height: 4.5rem;
         border-radius: 22.5px;
         text-decoration: none;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     
         
     }  
@@ -52,24 +61,74 @@
 @media all and (min-width: $breakpoint-tablet) {
 
     .section2{
-    background-color: pink;
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows:1fr 1fr 1fr;  
+    padding: 0px 20px 0px 20px;
+    height: 410px;
+    column-gap:35px;
 
     &__title{
         grid-column: span 3;
+        font-size: 2.8rem;
+        padding-top: 30px;
+    }
+
+    &__article{
+
+        align-items: center;
+
+        &__title{
+            font-size: 2.4rem;
+        }
+
+        &__text{
+            font-size: 2rem;
+            padding-top: 10px;
+            padding-bottom: 10px; 
+        }
     }
 
     &__button{
-         grid-column: span 3;
+        
+        text-align: center;
+        margin-bottom: 60px;
+        grid-column: 2/3;
+
     }
 }
+
 }
+
 @media all and (min-width: $breakpoint-desktop){
     .section2{
-        background-color: purple;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;  
+    padding: 0px 20px 0px 20px;
+    height: 420px;
+    column-gap:35px;
+
+    &__title{
+        grid-column: span 3;
+        font-size: 2.8rem;
+        padding-top: 30px;
+    }
+
+    &__article{
+        
+        align-items: center;
+
+        &__title{
+            font-size: 2.4rem;
+        }
+
+        &__text{
+            font-size: 2rem;
+            padding-top: 10px;
+            padding-bottom: 10px; 
+        }
     }
 }
-    
- 
+
+}
