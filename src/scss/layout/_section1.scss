@@ -31,6 +31,16 @@
         font-weight: 500;
         border-radius: 22.5px;
         text-decoration: none;
+        width: 18.4rem;
+        height: 4.5rem;
+        transition: transform 1s;
+
+        &:hover{
+            background-color: $color--brand;
+            color: $color--white;
+            transform: scale(0.8);
+            
+            }
 
         
     }

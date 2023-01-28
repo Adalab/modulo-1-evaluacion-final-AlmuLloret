@@ -1,8 +1,8 @@
 .section2{
-    display:grid;
-    grid-template-columns:1fr;
-    grid-template-rows:repeat (5, 1fr);  
+    
     background-color: $color--light;
+    grid-template-columns:1fr;
+    grid-template-rows:repeat (5, 1fr); 
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -12,13 +12,14 @@
         font-size: 2rem;
         font-family: $font-h;
         line-height: 30px;
+        
 
     }
 
     &__article{
-        margin-top: 45px;
         justify-content: center;
         align-items: center;
+        margin-bottom: 45px;
 
         &__title{
             font-size: 1.8rem;
@@ -47,12 +48,22 @@
         border-radius: 22.5px;
         text-decoration: none;
         text-align: center;
-        justify-content: right;
         justify-items: center;
         align-items: center;
+        transition: transform 1s;
+
+
+        &:hover{
+            background-color: $color--white;
+            color: $color--brand;
+            border: solid 3px;
+            transform: scale(1.3);
+            
+            }
     
-        
     }  
+
+    
 
 
 }
