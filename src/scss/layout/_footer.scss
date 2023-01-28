@@ -2,10 +2,9 @@
     background-color: $color--dark;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
-    padding-top: 65px;
-   
+    justify-items: center;
+    
     &__list{
         
         color: $color--white;
@@ -43,7 +42,8 @@
     &__button {
         
         position: relative;
-        top: -87.5px;
+        top: -22.5px;
+
         background-color: $color--white;
         background-image: url(../images/ico-arrow.svg);
         background-repeat: no-repeat;
@@ -57,14 +57,43 @@
     
 }
 
+
+.prueba{
+    background-color: aqua;
+
+}
+
 @media all and (min-width: $breakpoint-tablet) {
 
-    
+    .container{
+        width: 80vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+        
+       
+    }
+
+
+    .footer__logo{
+        order: -1;
+
+    }
+
+ 
     
 }
+
+
 @media all and (min-width: $breakpoint-desktop){
+
+    .container{
+        width: 60vw;
    
 }
     
+}
  
+
 

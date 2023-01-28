@@ -35,9 +35,7 @@
     }
     &__button{
 
-        display: inline;
-
-        margin: 40px 10px 0 10px;
+        margin: 40px auto;
         font-family: $font-text;
         background-color: $color--brand;
         color: $color--white;
@@ -49,7 +47,8 @@
         border-radius: 22.5px;
         text-decoration: none;
         text-align: center;
-        justify-content: center;
+        justify-content: right;
+        justify-items: center;
         align-items: center;
     
         
