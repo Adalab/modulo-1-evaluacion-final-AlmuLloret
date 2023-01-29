@@ -32,10 +32,15 @@
         font-family: $font-text ;
         line-height: 30px;
         text-align: center;
+        animation: run 1s 1;
+        animation-name: run;
+        animation-duration: 3s;
+        transform: translatex(0);
 
-        &--color{
+        &--color {
             color: $color--brand;
         }
+
 
     }
 
@@ -43,7 +48,6 @@
         
         position: relative;
         top: -22.5px;
-
         background-color: $color--white;
         background-image: url(../images/ico-arrow.svg);
         background-repeat: no-repeat;
@@ -52,16 +56,23 @@
         height: 45px;
         width: 45px;
         border-radius: 50%;
+        
     
     }
     
 }
 
+@keyframes run {
+    from {
+        transform: translatex(-300px);
 
-.prueba{
-    background-color: aqua;
+    }
+    to{
+        transform: translatex( 0px);
+    }
 
 }
+
 
 @media all and (min-width: $breakpoint-tablet) {
 
