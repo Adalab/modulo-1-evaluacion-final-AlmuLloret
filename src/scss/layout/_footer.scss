@@ -12,6 +12,10 @@
         align-items: center;
         text-align: center;
         margin-bottom: 30px;
+        animation: slideall 1s 1;
+            animation-name: slideall;
+            animation-duration: 3s;
+            transform: translatey(0);
 
         &__link{
             list-style: none;
@@ -20,6 +24,13 @@
             font-family: $font-text ;
             text-decoration: none;
             line-height: 1.88;
+
+            &:hover{
+
+                color: $color--brand;
+                
+            }
+            
 
         }
     }
@@ -41,6 +52,17 @@
             color: $color--brand;
         }
 
+        &__heart{
+
+        display: inline-block;
+        animation-name: heart;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        transform: scale(1.2);
+
+        }
+
 
     }
 
@@ -56,13 +78,21 @@
         height: 45px;
         width: 45px;
         border-radius: 50%;
+        /*animation-name: rotate;
+        animation-duration: 3s;
+        transform: rotate(360deg);*/
         
+        &:hover{
+            animation-name: rotate;
+            animation-duration: 3s;
+            transform: rotate(360deg);
+        }
     
     }
     
 }
 
-@keyframes run {
+/*@keyframes run {
     from {
         transform: translatex(-300px);
 
@@ -71,8 +101,48 @@
         transform: translatex( 0px);
     }
 
+}*/
+
+/*@keyframes slideall {
+    from {
+        transform: translatey(200px);
+
+    }
+    to{
+        transform: translatey( 0px);
+    }
+
+}*/
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
 }
 
+@keyframes heart {
+    0% {
+        transform: scale(1);
+
+    }
+    25%{
+        transform: scale(1.2);
+    }
+
+    50%{
+        transform: scale(.9);
+    }
+
+    100%{
+        transform: scale(1.2);
+    }
+
+}
 
 @media all and (min-width: $breakpoint-tablet) {
 
@@ -82,7 +152,6 @@
         flex-direction: row;
         justify-content: space-evenly;
         text-align: center;
-        
        
     }
 
@@ -92,7 +161,6 @@
 
     }
 
- 
     
 }
 
