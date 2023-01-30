@@ -1,0 +1,40 @@
+@keyframes heart {
+    0% {
+        transform: scale(1);
+
+    }
+    25%{
+        transform: scale(1.2);
+    }
+
+    50%{
+        transform: scale(.9);
+    }
+
+    100%{
+        transform: scale(1.2);
+    }
+
+}
+
+/*@keyframes run {
+    from {
+        transform: translatex(-300px);
+
+    }
+    to{
+        transform: translatex( 0px);
+    }
+
+}*/
+
+/*@keyframes slideall {
+    from {
+        transform: translatey(200px);
+
+    }
+    to{
+        transform: translatey( 0px);
+    }
+
+}*/
